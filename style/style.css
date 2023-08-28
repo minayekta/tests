@@ -1,0 +1,44 @@
+.GlobalTour .welcome-video {}
+
+.GlobalTour .welcome-video video {
+    width: 100%;
+    height: 100vh;
+}
+
+.GlobalTour .text-elements-wrap {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GlobalTour .text-elements .anime-titles {
+    color: var(--back-ground-deep-gray-dark-mode-back-ground-black, #1E1E1E);
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+    height: 80px;
+    overflow: hidden;
+}
+
+.GlobalTour .moving-words{
+    text-align: left;
+}
+
+.GlobalTour {}
+
+.GlobalTour {}
+
+.GlobalTour {}
+
+.GlobalTour {}
+
+.GlobalTour {}
+
+.GlobalTour {}
+
+
+.test {
+    height: 100vh;
+}
