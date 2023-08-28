@@ -4,12 +4,18 @@
     width: 100%;
     height: 100vh;
 }
-
+.spacer{
+    min-height: 500px;
+}
+.spacer2{
+    min-height: 5000px;
+}
 .GlobalTour .text-elements-wrap {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .GlobalTour .text-elements .anime-titles {
@@ -26,7 +32,9 @@
     text-align: left;
 }
 
-.GlobalTour {}
+.GlobalTour .trigger-poster{
+
+}
 
 .GlobalTour {}
 
@@ -40,5 +48,8 @@
 
 
 .test {
-    height: 100vh;
+    height: 20vh;
+}
+.mytest{
+    transform: translateY(-330px);
 }

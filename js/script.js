@@ -15,18 +15,13 @@ $(function () {
 
     ////////////////////////////////////////////////
     
-    var tween = TweenMax.from("#animate", 0.5, {autoAlpha: 0, scale: 0.7});
-    var scene =  new ScrollMagic.Scene({triggerElement: "a#top", duration: 200, triggerHook: "onLeave"})
+    var tween = TweenMax.from("#animate", 2, {autoAlpha: 0, scale: 0.1});
+    new ScrollMagic.Scene({triggerElement: ".trigger-poster", duration: 500, triggerHook: "onLeave"})
         .setTween(tween)
         .addIndicators() 
-        .addTo(controller);
+        .addTo(controller)
 
     controller.scrollTo(function (newpos) {
         TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
-});
-
-
-
-
-
+    });
 });
