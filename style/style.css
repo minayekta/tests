@@ -1,7 +1,7 @@
-.GlobalTour .welcome-video {}
+.GlobalTour .welcome-action {}
 
-.GlobalTour .welcome-video video {
-    width: 100%;
+.GlobalTour .welcome-action video {
+    width: 100vw;
     height: 100vh;
 }
 .spacer{
@@ -33,10 +33,21 @@
 }
 
 .GlobalTour .trigger-poster{
-
+    transform: translateY(-200px);
 }
 
-.GlobalTour {}
+.GlobalTour .poster-wrap{
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 1s;
+}
+.GlobalTour .poster-wrap img{
+    transition: 1s;
+}
+.GlobalTour .poster-wrap img:hover{
+    transform: scale(1.02);
+    transition: 1s;
+}
 
 .GlobalTour {}
 
@@ -50,6 +61,6 @@
 .test {
     height: 20vh;
 }
-.mytest{
+.viriety-posters-sec{
     transform: translateY(-330px);
 }
