@@ -51,9 +51,8 @@
     transition: 1s;
 }
 
-.GlobalTour .poster-wrap,.GlobalTour .all-text-box {
-    
-}
+.GlobalTour .poster-wrap,
+.GlobalTour .all-text-box {}
 
 .GlobalTour .all-text-box.step-two {
     transform: translateY(-50%);
@@ -63,10 +62,12 @@
 .GlobalTour .viriety-posters-sec {
     transform: translateY(-330px);
 }
+
 .GlobalTour .viriety-posters-sec .inner-wrap {
     height: 115px;
     overflow: hidden;
 }
+
 .GlobalTour .variety-frame {
     width: 100%;
     overflow: hidden;
@@ -89,9 +90,11 @@
     display: flex;
     transition: 1s;
 }
+
 .GlobalTour .viriety-slide {
     width: 25%;
 }
+
 .GlobalTour .hidden {
     display: none;
 }
@@ -101,7 +104,37 @@
     transition: 1s;
 }
 
-.GlobalTour {}
+.GlobalTour .poster-wrap img {
+    height: 550px;
+}
+
+
+.GlobalTour .vehicles-move {
+    border-bottom: dashed 4px gray;
+    position: relative;
+}
+
+.GlobalTour .vehicles-move .red-bullet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 100px;
+    bottom: -6px;
+    z-index: 1;
+}
+
+.GlobalTour .vehicles-move .red-bullet.step-2 {
+    left: calc(100% / 3);
+}
+
+.GlobalTour .vehicles-move .red-bullet.step-3 {
+    left: calc(100% / 3 *2);
+}
+
+.GlobalTour .vehicles-move .red-bullet.step-4 {
+    left: calc(100% / 3 *3);
+}
 
 .GlobalTour {}
 
@@ -113,4 +146,3 @@
 .test {
     height: 20vh;
 }
-
