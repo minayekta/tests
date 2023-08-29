@@ -8,7 +8,7 @@ $ (function () {
   new ScrollMagic.Scene ({
     triggerElement: '#moving-texts',
     triggerHook: 'onLeave',
-    duration: '300%',
+    duration: '350%',
   })
     .setPin ('#moving-texts')
     .setTween (wipeAnimation)

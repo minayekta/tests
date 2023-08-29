@@ -1,8 +1,9 @@
-.GlobalTour .welcome-action {}
+.GlobalTour .video-action {}
 
-.GlobalTour .welcome-action video {
-    width: 100vw;
+.GlobalTour .video-action video {
+    width: 100%;
     height: 100vh;
+    object-fit: cover;
 }
 
 .spacer {
