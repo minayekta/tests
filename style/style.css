@@ -4,12 +4,15 @@
     width: 100vw;
     height: 100vh;
 }
-.spacer{
+
+.spacer {
     min-height: 500px;
 }
-.spacer2{
+
+.spacer2 {
     min-height: 5000px;
 }
+
 .GlobalTour .text-elements-wrap {
     height: 100vh;
     display: flex;
@@ -28,23 +31,30 @@
     overflow: hidden;
 }
 
-.GlobalTour .moving-words{
+.GlobalTour .moving-words {
     text-align: left;
 }
 
-.GlobalTour .trigger-poster{
+.GlobalTour .trigger-poster {
     transform: translateY(-200px);
 }
 
-.GlobalTour .poster-wrap{
+.GlobalTour .poster-wrap.step-two {
+    transform: translateY(-50%);
+}
+
+.GlobalTour .pictures-frame {
+    height: 550px;
     overflow: hidden;
     border-radius: 10px;
     transition: 1s;
 }
-.GlobalTour .poster-wrap img{
+
+.GlobalTour .poster-wrap {
     transition: 1s;
 }
-.GlobalTour .poster-wrap img:hover{
+
+.GlobalTour .poster-wrap img:hover {
     transform: scale(1.02);
     transition: 1s;
 }
@@ -61,6 +71,7 @@
 .test {
     height: 20vh;
 }
-.viriety-posters-sec{
+
+.viriety-posters-sec {
     transform: translateY(-330px);
 }
