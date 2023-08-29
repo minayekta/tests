@@ -116,11 +116,11 @@
 
 .GlobalTour .vehicles-move .red-bullet {
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background: red;
+    width: 12px;
+    height: 12px;
+    background: #bf0000;
     border-radius: 100px;
-    bottom: -6px;
+    bottom: -8px;
     z-index: 1;
 }
 
@@ -135,6 +135,34 @@
 .GlobalTour .vehicles-move .red-bullet.step-4 {
     left: calc(100% / 3 *3);
 }
+.GlobalTour .vehicles-icons {
+    position: absolute;
+    bottom: 27px;
+    z-index: 2;
+}
+.GlobalTour .vehicles-icons .inner-wrap-icons {
+   transition: 1s;
+}
+
+.GlobalTour .vehicles-icons svg{
+    position: absolute;
+   transition: 1s;
+
+}
+.GlobalTour .vehicles-icons .step-1{
+    left: 0;
+}
+.GlobalTour .vehicles-icons .step-2{
+    left: calc(100% / 3);
+}
+.GlobalTour .vehicles-icons .step-3{
+    left: calc(100% / 3 * 2);
+}
+.GlobalTour .vehicles-icons .step-4{
+    left: 100%;
+}
+
+
 
 .GlobalTour {}
 
