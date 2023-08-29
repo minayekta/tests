@@ -67,8 +67,26 @@ $ (function () {
 
   // MANAGERS SECTION 
     gsap.to(".anime-titles", {
-        x: '100',
-        y: '150',
+        x: '',
+        y: '',
         duration: 1,
     });
+
+    ////////////////////////////////////////////////
+
+  // let tweenManagers = TweenMax.from ('.text-white', 2, {autoAlpha: 0, scale: 0.1});
+  // new ScrollMagic.Scene ({
+  //   triggerElement: '.trigger-managers',
+  //   duration: 200,
+  //   triggerHook: 'onLeave',
+  // })
+  //   .setTween (tweenManagers)
+  //   .addTo (controller);
+
+
+
+
+    new ScrollMagic.Scene({triggerElement: ".text-white",offset: 100})
+        .setClassToggle(".title-managers", "go-left") 
+        .addTo(controller);
 });
