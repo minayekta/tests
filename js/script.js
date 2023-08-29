@@ -42,26 +42,33 @@ $ (function () {
       discover_variety_frame == 5 ||
       discover_variety_frame == 7
     ) {
-      $ ('.GlobalTour .all-text-box').removeClass ('step-two');
-      $ ('.GlobalTour .poster-wrap').removeClass ('step-two');
+        $ ('.GlobalTour .all-text-box').removeClass ('step-two');
+        $ ('.GlobalTour .poster-wrap').removeClass ('step-two');
 
-      let = icon_vehicle = $ (
-        '.GlobalTour .vehicles-icons .step-' + discover_variety_frame_step
-      )
-      icon_vehicle.removeClass ('step-' + discover_variety_frame_step);
+        let = icon_vehicle = $ (
+            '.GlobalTour .vehicles-icons .step-' + discover_variety_frame_step
+        )
+        icon_vehicle.removeClass ('step-' + discover_variety_frame_step);
 
-      $ ('.GlobalTour .viriety-posters').removeClass (
-        'frame-' + discover_variety_frame_step
-      );
-      discover_variety_frame_step++;
-      icon_vehicle.addClass ('step-' + discover_variety_frame_step);
+        $ ('.GlobalTour .viriety-posters').removeClass (
+            'frame-' + discover_variety_frame_step
+        );
+        discover_variety_frame_step++;
+        icon_vehicle.addClass ('step-' + discover_variety_frame_step);
 
-      $ ('.GlobalTour .viriety-posters').addClass (
-        'frame-' + discover_variety_frame_step
-      );
+        $ ('.GlobalTour .viriety-posters').addClass (
+            'frame-' + discover_variety_frame_step
+        );
     }
 
     console.log (discover_variety_frame);
     console.log (discover_variety_frame_step);
   });
+
+  // MANAGERS SECTION 
+    gsap.to(".anime-titles", {
+        x: '100',
+        y: '150',
+        duration: 1,
+    });
 });
