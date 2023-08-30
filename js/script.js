@@ -30,13 +30,13 @@ $ (function () {
   let discover_variety_frame = 1;
   let discover_variety_frame_step = 1;
   $ ('.pictures-frame').on ('click', function () {
-    // change POSTER
+  // change POSTER
     discover_variety_frame++;
     $ ('.GlobalTour .poster-wrap').addClass ('step-two');
-    // change TEXT
+  // change TEXT
     $ ('.GlobalTour .all-text-box').addClass ('step-two');
 
-    // change SLIDE
+  // change SLIDE
     if (
       discover_variety_frame == 3 ||
       discover_variety_frame == 5 ||
@@ -72,8 +72,29 @@ $ (function () {
         duration: 1,
     });
 
-    ////////////////////////////////////////////////
+     ////////////////////////////////////////////////
+
     new ScrollMagic.Scene({triggerElement: ".title-managers",offset: 100})
         .setClassToggle(".title-managers", "go-left") 
         .addTo(controller);
+
+    ////////////////////////////////////////////////
+
+    new ScrollMagic.Scene({
+        triggerElement: "#trigger-no-worries-titles", duration: 2000,offset: "100vh"
+    })
+    .setClassToggle(".title-no-worries", "pinned") 
+    .setPin("#larger-title")
+    .setTween("#larger-title", 0.5, {scale: 4.5, ease: Linear.easeNone}) 
+    .addTo(controller)
+
+
+
+
+  //////////////////////////////////////////////// SLIDER_CAROUSEL
+
+        $(".owl-carousel").owlCarousel();
+
+ 
+
 });
