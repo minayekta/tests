@@ -86,7 +86,7 @@ $ (function () {
 
 
 
-    new ScrollMagic.Scene({triggerElement: ".text-white",offset: 100})
+    new ScrollMagic.Scene({triggerElement: ".title-managers",offset: 100})
         .setClassToggle(".title-managers", "go-left") 
         .addTo(controller);
 });
