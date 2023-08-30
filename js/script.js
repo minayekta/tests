@@ -73,19 +73,6 @@ $ (function () {
     });
 
     ////////////////////////////////////////////////
-
-  // let tweenManagers = TweenMax.from ('.text-white', 2, {autoAlpha: 0, scale: 0.1});
-  // new ScrollMagic.Scene ({
-  //   triggerElement: '.trigger-managers',
-  //   duration: 200,
-  //   triggerHook: 'onLeave',
-  // })
-  //   .setTween (tweenManagers)
-  //   .addTo (controller);
-
-
-
-
     new ScrollMagic.Scene({triggerElement: ".title-managers",offset: 100})
         .setClassToggle(".title-managers", "go-left") 
         .addTo(controller);
