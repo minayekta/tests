@@ -10,6 +10,7 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .GlobalTour .managers .back-managers {
@@ -36,9 +37,11 @@
     transition: 1s;
 }
 
-.GlobalTour .managers .overlayer h1.go-left {
-    left: 130px;
-    transform: translate(0%, -50%);
+.GlobalTour .managers .overlayer h1.go-top {
+    /* left: 130px;
+    transform: translate(0%, -50%); */
+    top: -50%;
+    transform: translate(-50%, 0);
 }
 
 .spacer {
@@ -242,8 +245,6 @@
 
 .GlobalTour .go-connect {
     background-color: #1E1E1E;
-    /* min-height: 100vh; */
-    /* padding: 18vh 0; */
     opacity: 0;
 }
 
@@ -296,7 +297,7 @@
     z-index: 1;
 } */
 
-.test-trigger {
+.GlobalTour .some-margin {
     margin-bottom: 200px;
 }
 
