@@ -158,15 +158,16 @@ $(function () {
   });
 
   // NEGOTIATE TEAMS 
-  gsap.to(".negotiate-posters-wrap", {
+  gsap.to(".go-negotiate", {
     scrollTrigger: {
-      trigger: ".negotiate-posters-wrap",
+      trigger: ".go-negotiate",
       scrub: true,
       pin: true,
       start: "center center",
       end: "+=3600",
     },
   });
+
   gsap.to(".negotiate-2", {
     scrollTrigger: {
       trigger: ".negotiate-2",
@@ -178,6 +179,7 @@ $(function () {
     ease:"slow(0.7, 0.7, false)",
     y:"-560px",
   });
+  
   gsap.to(".negotiate-3", {
     scrollTrigger: {
       trigger: ".negotiate-3",
@@ -188,6 +190,7 @@ $(function () {
     duration: 10,
     y:"-1120px",
   });
+
   gsap.to(".negotiate-4", {
     scrollTrigger: {
       trigger: ".negotiate-4",
@@ -216,11 +219,34 @@ $(function () {
     }
   });
 
+  //////////////////////////////////////////////// RED SPACE
 
 
+  gsap.to(".red-space", {
+    scrollTrigger: {
+      trigger: ".red-space",
+      scrub: true,
+      pin: true,
+      start: "center center",
+      end: "bottom -100%",
+      toggleClass: "active",
+      ease: "power2"
+    },
+  });
 
 
+  gsap.to(".moving-title", {
+    scrollTrigger: {
+      trigger: ".moving-title",
+      scrub: 0.5,
+      start: "top bottom",
+      end: "bottom -300%",
+      ease: "power2"
+    },
+    y: "-30%"
+  });
 
+  
 
   //////////////////////////////////////////////// SLIDER_CAROUSEL
 
