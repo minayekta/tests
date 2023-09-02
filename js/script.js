@@ -73,12 +73,6 @@ $(function () {
   });
 
   ////////////////////////////////////////////////
-
-  new ScrollMagic.Scene({ triggerElement: ".title-managers", offset: 100 })
-    .setClassToggle(".title-managers", "go-top")
-    .addTo(controller);
-
-  ////////////////////////////////////////////////
   // LARGER TITLES
 
   gsap.registerPlugin(ScrollTrigger);
@@ -159,7 +153,6 @@ $(function () {
 
   //////////////////////////////////////////////// CENTER MOVING VIDEO
 
-
   gsap.to(".video-action.center", {
     scrollTrigger: {
       trigger: ".video-action.center",
@@ -172,6 +165,42 @@ $(function () {
     },
   });
 
+
+  // new ScrollMagic.Scene({ triggerElement: ".title-managers", offset: 100 })
+  // .setClassToggle(".title-managers", "go-top")
+  // .addTo(controller);
+  gsap.to(".video-action.center", {
+    scrollTrigger: {
+      trigger: ".title-center-moving-video",
+      scrub: true,
+      pin: true,
+      start: "center center",
+      end: "bottom -300%",
+      toggleClass: "active",
+      ease: "power2"
+    },
+    
+  });
+
+  gsap.to(".title-center-moving-video", {
+    scrollTrigger: {
+      trigger: ".title-center-moving-video",
+      scrub: true,
+      start: "center center",
+      ease: "power2",
+    },
+    y:"-150%",
+  });
+
+  gsap.to(".bottom-slide-text", {
+    scrollTrigger: {
+      trigger: ".bottom-slide-text",
+      scrub: true,
+      start: "center center",
+      ease: "power2",
+    },
+    y:"-40vh",
+  });
   
   //////////////////////////////////////////////// RED SPACE
 

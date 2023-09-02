@@ -34,14 +34,23 @@ section {
     width: 100%;
 }
 
-.GlobalTour .managers .overlayer h1 {
+.GlobalTour .managers .overlayer .title-center-moving-video {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 92px;
     font-weight: bold;
-    transition: 1s;
+}
+
+.GlobalTour .managers .overlayer .bottom-slide-text {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
 }
 
 .GlobalTour .managers .overlayer h1.go-top {
@@ -398,9 +407,10 @@ section {
 .GlobalTour .red-frame .moving-title {
     /* position: absolute; */
     top: 75%;
-   
+
 }
-.GlobalTour .red-frame .moving-title h4{
+
+.GlobalTour .red-frame .moving-title h4 {
     color: var(--text-color-dark-background-base-text-color-dark-background, #FFF);
     font-size: 55px;
     font-style: normal;
