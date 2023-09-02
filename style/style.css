@@ -264,7 +264,9 @@ section {
     opacity: 0;
 }
 
-
+.GlobalTour .opacity-1{
+    opacity: 1 !important;
+}
 .GlobalTour .connect-section {
     height: 100%;
     width: 100%;

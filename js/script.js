@@ -85,7 +85,7 @@ $(function () {
     height: 0,
   });
 
-  // LARGER TITLES
+  // CONNETCT OFFICES (behind titles)
   gsap.to(".go-connect", {
     scrollTrigger: {
       trigger: ".go-connect",
@@ -98,7 +98,28 @@ $(function () {
     opacity:1,
   });
 
-  // CONNETCT OFFICES (behind titles)
+
+  
+  $(window).scroll(function () {
+    let topToElement = $(".go-connect").offset().top,
+      windowHeight = $(window).height(),
+      scrollFromTop = $(this).scrollTop();
+      let howMuchTrigger = topToElement - windowHeight
+    if (scrollFromTop > howMuchTrigger ) {
+     
+      if(scrollFromTop - howMuchTrigger > 1125 && scrollFromTop - howMuchTrigger < 1300){
+        $(".go-connect").addClass("opacity-1")
+      }
+      if(scrollFromTop - howMuchTrigger >1300  || scrollFromTop - howMuchTrigger < 1125){
+        $(".go-connect").removeClass("opacity-1")
+      }
+      console.log(scrollFromTop - howMuchTrigger)
+    }
+  });
+
+  
+  //////////
+
   gsap.to(".connect-title", {
     scrollTrigger: {
       trigger: ".go-connect",
