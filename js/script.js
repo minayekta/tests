@@ -172,9 +172,10 @@ $(function () {
       trigger: ".negotiate-2",
       scrub: true,
       start: "center center",
-      ease:"slow(0.7, 0.7, false)",
-      duration: 10,
+      delay:10, 
+    
     },
+    ease:"slow(0.7, 0.7, false)",
     y:"-560px",
   });
   gsap.to(".negotiate-3", {
@@ -182,9 +183,9 @@ $(function () {
       trigger: ".negotiate-3",
       scrub: true,
       start: "center center",
-      ease: "slow(0.7, 0.7, false)",
-      duration: 10,
     },
+    ease:"slow(0.7, 0.7, false)",
+    duration: 10,
     y:"-1120px",
   });
   gsap.to(".negotiate-4", {
@@ -192,16 +193,33 @@ $(function () {
       trigger: ".negotiate-4",
       scrub: true,
       start: "center center",
-      ease: "slow(0.7, 0.7, false)",
-      duration: 10,
     },
+    ease:"slow(0.7, 0.7, false)",
+    duration: 10,
     y:"-1680px",
+    // css:{className:"finish negotiate-4"}, 
+   
+  });
+
+  //////////////////////////////////////////////// MOVING FORM
+
+  $(window).scroll(function () {
+    let topToElement = $(".space-test").offset().top,
+      heightElement = $(".space-test").outerHeight(),
+      windowHeight = $(window).height(),
+      scrollFromTop = $(this).scrollTop();
+      let howMuchTrigger = topToElement - windowHeight
+    if (scrollFromTop > howMuchTrigger  && scrollFromTop - howMuchTrigger < 300 ) {
+      console.log('you have scrolled to the h1!');
+      $(".moving-form .image-part").removeClass("separated")
+      $(".moving-form .form-part").removeClass("separated")
+    }
   });
 
 
 
 
-  //////////////////////////////////////////////// SLIDER_CAROUSEL
+
 
 
   //////////////////////////////////////////////// SLIDER_CAROUSEL
@@ -210,16 +228,7 @@ $(function () {
 
   //////////////////////////////////////////////////// FUNCTION FOR RECIEVE TO ELEMENT SCROLL
 
-  $(window).scroll(function () {
-    let topToElement = $(".no-worries").offset().top,
-      heightElement = $(".no-worries").outerHeight(),
-      windowHeight = $(window).height(),
-      scrollFromTop = $(this).scrollTop();
-    console.log(topToElement, heightElement, windowHeight, scrollFromTop);
-    if (scrollFromTop > topToElement - windowHeight) {
-      // alert('you have scrolled to the h1!');
-    }
-  });
+
 });
 
 

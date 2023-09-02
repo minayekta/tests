@@ -344,6 +344,27 @@
     width: 100%;
 }
 
+.GlobalTour .overflow-me {
+    overflow: hidden;
+    transition: 1s;
+}
+
+.GlobalTour .image-part,
+.GlobalTour .form-part {
+    transition: 1s;
+}
+
+.GlobalTour .image-part.separated {
+    transform: translateX(-110%);
+}
+
+.GlobalTour .form-part.separated {
+    transform: translateX(110%);
+}
+
+
+
+
 .test {
     height: 20vh;
 }
