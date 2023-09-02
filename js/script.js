@@ -158,7 +158,7 @@ $(function () {
   });
 
   // NEGOTIATE TEAMS 
-  gsap.to(".go-negotiate", {
+  gsap.to(".space-test", {
     scrollTrigger: {
       trigger: ".go-negotiate",
       scrub: true,
@@ -222,29 +222,27 @@ $(function () {
   //////////////////////////////////////////////// RED SPACE
 
 
-  gsap.to(".red-space", {
-    scrollTrigger: {
-      trigger: ".red-space",
-      scrub: true,
-      pin: true,
-      start: "center center",
-      end: "bottom -100%",
-      toggleClass: "active",
-      ease: "power2"
-    },
+  // gsap.to(".red-space", {
+  //   scrollTrigger: {
+  //     trigger: ".red-space",
+  //     scrub: true,
+  //     pin: true,
+  //     start: "center center",
+  //     end: "bottom -100%",
+  //     toggleClass: "active",
+  //     ease: "power2"
+  //   },
+  // });
+
+  let st = ScrollTrigger.create({
+    trigger: ".go-negotiate",
+    pin: ".red-space",
+    start: "center center",
+    end: "+=1000"
   });
 
 
-  gsap.to(".moving-title", {
-    scrollTrigger: {
-      trigger: ".moving-title",
-      scrub: 0.5,
-      start: "top bottom",
-      end: "bottom -300%",
-      ease: "power2"
-    },
-    y: "-30%"
-  });
+
 
   
 
