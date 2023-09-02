@@ -81,25 +81,6 @@ $(function () {
   ////////////////////////////////////////////////
   // LARGER TITLES
 
-  // new ScrollMagic.Scene({
-  //     triggerElement: "#trigger-no-worries-titles", duration: 2000,offset: 100
-  // })
-  // .setClassToggle(".title-no-worries", "pinned")
-  // .setTween("#larger-title", {scale: 10, ease: Linear.easeNone})
-  // .addTo(controller)
-
-  // COMMING CONTACTS
-
-  // var controllerFuck = new ScrollMagic.Controller({
-  //   globalSceneOptions: {
-  //     triggerHook: 'onLeave',
-  //   }
-  // });
-  // new ScrollMagic.Scene({
-  //     triggerElement: ".no-worries",
-  //   })
-  //   .setPin(".no-worries", {pushFollowers: false}).addIndicators().addTo(controllerFuck);
-
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.to("#larger-title", {
@@ -116,6 +97,7 @@ $(function () {
     height: 0,
   });
 
+  // LARGER TITLES
   gsap.to(".go-connect", {
     scrollTrigger: {
       trigger: ".go-connect",
@@ -128,11 +110,11 @@ $(function () {
     opacity:1,
   });
 
+  // CONNETCT OFFICES (behind titles)
   gsap.to(".connect-title", {
     scrollTrigger: {
       trigger: ".go-connect",
       scrub: true,
-      // pin: true,
       start: "center center",
       end: "+=500",
       ease: "power2",
@@ -144,7 +126,6 @@ $(function () {
     scrollTrigger: {
       trigger: ".go-connect",
       scrub: true,
-      // pin: true,
       start: "center center",
       end: "+=500",
     },
@@ -158,7 +139,6 @@ $(function () {
     scrollTrigger: {
       trigger: ".office-2",
       scrub: true,
-      // pin: true,
       start: "center center",
       end: "+=500",
       ease: "power2",
@@ -170,7 +150,6 @@ $(function () {
     scrollTrigger: {
       trigger: ".office-3",
       scrub: true,
-      // pin: true,
       start: "center center",
       end: "+=500",
       ease: "power2",
@@ -178,7 +157,7 @@ $(function () {
     y:"-980px",
   });
 
-
+  // NEGOTIATE TEAMS 
   gsap.to(".negotiate-posters-wrap", {
     scrollTrigger: {
       trigger: ".negotiate-posters-wrap",
@@ -218,6 +197,12 @@ $(function () {
     },
     y:"-1680px",
   });
+
+
+
+
+  //////////////////////////////////////////////// SLIDER_CAROUSEL
+
 
   //////////////////////////////////////////////// SLIDER_CAROUSEL
 
