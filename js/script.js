@@ -177,23 +177,26 @@ $(function () {
     },
     y:"-980px",
   });
-  // gsap.to(".trigger-connect", {
-  //   scrollTrigger: {
-  //     trigger: ".trigger-connect",
-  //     scrub: true,
-  //     // pin: true,
-  //     start: "center center",
-  //     end: "+=1000",
-  //     ease: "power2",
-  //   },
-  //   x: "",
-  //   y: "-500px",
-  //   duration: 20,
-
-  // });
 
 
-
+  gsap.to(".negotiate-posters-wrap", {
+    scrollTrigger: {
+      trigger: ".negotiate-posters-wrap",
+      scrub: true,
+      pin: true,
+      start: "center center",
+      end: "+=1500",
+    },
+  });
+  gsap.to(".negotiate-2", {
+    scrollTrigger: {
+      trigger: ".negotiate-2",
+      scrub: true,
+      start: "center center",
+      ease: "power2",
+    },
+    y:"-559px",
+  });
 
   //////////////////////////////////////////////// SLIDER_CAROUSEL
 

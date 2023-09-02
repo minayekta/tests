@@ -272,6 +272,7 @@
     position: relative;
 }
 
+
 .GlobalTour .office-posters-wrap .office-posters-main-slide {
     position: absolute;
     top: 0;
@@ -301,18 +302,26 @@
     margin-bottom: 200px;
 }
 
-.GlobalTour .office-posters-wrap .img-wrap {}
-
-.GlobalTour .office-posters-wrap .text-part {}
-
 .GlobalTour .align-system {
     padding-top: 21vh;
     /* padding: 28vh 0; */
 }
 
-
-
+.GlobalTour .negotiate-posters-wrap {
+    /* opacity: 0; */
+    height: 483px;
+    overflow: hidden;
+    position: relative;
+}
+.GlobalTour .negotiate-posters-wrap .office-posters-main-slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
 .test {
     height: 20vh;
+}
+.space-test{
+    height: 200vh;
 }
