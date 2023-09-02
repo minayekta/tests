@@ -202,7 +202,7 @@ $(function () {
       start: "center center",
       ease: "power2",
     },
-    y:"-1000%",
+    y:"-500%",
   });
 
   gsap.to(".bottom-slide-text-red-space", {
@@ -287,7 +287,6 @@ $(function () {
       scrollFromTop = $(this).scrollTop();
       let howMuchTrigger = topToElement - windowHeight
     if (scrollFromTop > howMuchTrigger  && scrollFromTop - howMuchTrigger < 300 ) {
-      console.log('you have scrolled to the h1!');
       $(".moving-form .image-part").removeClass("separated")
       $(".moving-form .form-part").removeClass("separated")
     }
@@ -301,7 +300,9 @@ $(function () {
 
   //////////////////////////////////////////////// SLIDER_CAROUSEL
 
-  $(".owl-carousel").owlCarousel();
+  $(".owl-carousel").owlCarousel({
+    loop:true
+  });
 
   //////////////////////////////////////////////////// FUNCTION FOR RECIEVE TO ELEMENT SCROLL
 
