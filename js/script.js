@@ -95,27 +95,41 @@ $(function () {
       end: "+=2500",
       ease: "power2",
     },
+  });
+
+  gsap.to(".go-connect", {
+    scrollTrigger: {
+      trigger: ".go-connect",
+      scrub: true,
+      start: "center center",
+      end: "+=300",
+      ease: "power2",
+    },
     opacity:1,
   });
 
 
+
+
+
+
   
-  $(window).scroll(function () {
-    let topToElement = $(".go-connect").offset().top,
-      windowHeight = $(window).height(),
-      scrollFromTop = $(this).scrollTop();
-      let howMuchTrigger = topToElement - windowHeight
-    if (scrollFromTop > howMuchTrigger ) {
+  // $(window).scroll(function () {
+  //   let topToElement = $(".go-connect").offset().top,
+  //     windowHeight = $(window).height(),
+  //     scrollFromTop = $(this).scrollTop();
+  //     let howMuchTrigger = topToElement - windowHeight
+  //   if (scrollFromTop > howMuchTrigger ) {
      
-      if(scrollFromTop - howMuchTrigger > 1125 && scrollFromTop - howMuchTrigger < 1300){
-        $(".go-connect").addClass("opacity-1")
-      }
-      if(scrollFromTop - howMuchTrigger >1300  || scrollFromTop - howMuchTrigger < 1125){
-        $(".go-connect").removeClass("opacity-1")
-      }
-      console.log(scrollFromTop - howMuchTrigger)
-    }
-  });
+  //     if(scrollFromTop - howMuchTrigger > 1125 && scrollFromTop - howMuchTrigger < 1300){
+  //       $(".go-connect").addClass("opacity-1")
+  //     }
+  //     if(scrollFromTop - howMuchTrigger >1300  || scrollFromTop - howMuchTrigger < 1125){
+  //       $(".go-connect").removeClass("opacity-1")
+  //     }
+  //     console.log(scrollFromTop - howMuchTrigger)
+  //   }
+  // });
 
   
   //////////
@@ -188,6 +202,10 @@ $(function () {
       ease: "power2",
     },
     y:"-150%",
+    delay:5,
+    // onComplete: function () {
+    //   alert("alizopka")
+    // }
   });
 
   gsap.to(".bottom-slide-text", {
