@@ -1,5 +1,10 @@
-.GlobalTour .video-action {}
+.GlobalTour {
+    background: #f2f2f2 !important
+}
+section{
+    background: #f2f2f2;
 
+}
 .GlobalTour .video-action video {
     width: 100%;
     height: 100vh;
@@ -302,7 +307,7 @@
 .GlobalTour .text-poster {
     position: absolute;
     top: 50%;
-    background: white;
+    background: #f2f2f2;
     left: 10%;
     min-width: 30%;
     max-width: 40%;
@@ -343,7 +348,9 @@
     top: 0;
     width: 100%;
 }
-
+.GlobalTour .go-negotiate{
+    padding-bottom: 100px;
+}
 .GlobalTour .overflow-me {
     overflow: hidden;
     transition: 1s;
@@ -351,7 +358,9 @@
 
 .GlobalTour .image-part,
 .GlobalTour .form-part {
-    transition: 1s;
+    transition: 0.3s;
+    background:white;
+    min-height: 487px;
 }
 
 .GlobalTour .image-part.separated {
