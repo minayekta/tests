@@ -157,8 +157,40 @@ $(function () {
     y:"-980px",
   });
 
-  // NEGOTIATE TEAMS 
-  gsap.to(".space-test", {
+  //////////////////////////////////////////////// CENTER MOVING VIDEO
+
+
+  gsap.to(".video-action.center", {
+    scrollTrigger: {
+      trigger: ".video-action.center",
+      scrub: true,
+      pin: true,
+      start: "center center",
+      end: "bottom -40%",
+      toggleClass: "active",
+      ease: "power2"
+    },
+  });
+
+  
+  //////////////////////////////////////////////// RED SPACE
+
+
+  gsap.to(".red-space", {
+    scrollTrigger: {
+      trigger: ".red-space",
+      scrub: true,
+      pin: true,
+      start: "center center",
+      end: "bottom -40%",
+      toggleClass: "active",
+      ease: "power2"
+    },
+  });
+
+
+  ////////////////////////////////////////////// NEGOTIATE TEAMS 
+  gsap.to(".go-negotiate", {
     scrollTrigger: {
       trigger: ".go-negotiate",
       scrub: true,
@@ -174,7 +206,6 @@ $(function () {
       scrub: true,
       start: "center center",
       delay:10, 
-    
     },
     ease:"slow(0.7, 0.7, false)",
     y:"-560px",
@@ -219,27 +250,6 @@ $(function () {
     }
   });
 
-  //////////////////////////////////////////////// RED SPACE
-
-
-  // gsap.to(".red-space", {
-  //   scrollTrigger: {
-  //     trigger: ".red-space",
-  //     scrub: true,
-  //     pin: true,
-  //     start: "center center",
-  //     end: "bottom -100%",
-  //     toggleClass: "active",
-  //     ease: "power2"
-  //   },
-  // });
-
-  let st = ScrollTrigger.create({
-    trigger: ".go-negotiate",
-    pin: ".red-space",
-    start: "center center",
-    end: "+=1000"
-  });
 
 
 
