@@ -185,7 +185,7 @@ $(function () {
       scrub: true,
       pin: true,
       start: "center center",
-      end: "+=1500",
+      end: "+=3600",
     },
   });
   gsap.to(".negotiate-2", {
@@ -193,9 +193,30 @@ $(function () {
       trigger: ".negotiate-2",
       scrub: true,
       start: "center center",
-      ease: "power2",
+      ease:"slow(0.7, 0.7, false)",
+      duration: 10,
     },
-    y:"-559px",
+    y:"-560px",
+  });
+  gsap.to(".negotiate-3", {
+    scrollTrigger: {
+      trigger: ".negotiate-3",
+      scrub: true,
+      start: "center center",
+      ease: "slow(0.7, 0.7, false)",
+      duration: 10,
+    },
+    y:"-1120px",
+  });
+  gsap.to(".negotiate-4", {
+    scrollTrigger: {
+      trigger: ".negotiate-4",
+      scrub: true,
+      start: "center center",
+      ease: "slow(0.7, 0.7, false)",
+      duration: 10,
+    },
+    y:"-1680px",
   });
 
   //////////////////////////////////////////////// SLIDER_CAROUSEL

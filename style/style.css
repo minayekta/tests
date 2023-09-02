@@ -285,6 +285,30 @@
     justify-content: space-between;
 
 }
+
+.GlobalTour .negotiate-slide {
+    position: relative;
+}
+
+.GlobalTour .dark-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.569);
+}
+
+.GlobalTour .text-poster {
+    position: absolute;
+    top: 50%;
+    background: white;
+    left: 10%;
+    min-width: 30%;
+    max-width: 40%;
+    transform: translateY(-50%);
+}
+
 /* 
 .GlobalTour .office-1 {
     z-index: 3;
@@ -309,10 +333,11 @@
 
 .GlobalTour .negotiate-posters-wrap {
     /* opacity: 0; */
-    height: 483px;
+    height: 560px;
     overflow: hidden;
     position: relative;
 }
+
 .GlobalTour .negotiate-posters-wrap .office-posters-main-slide {
     position: absolute;
     top: 0;
@@ -322,6 +347,7 @@
 .test {
     height: 20vh;
 }
-.space-test{
+
+.space-test {
     height: 200vh;
 }
