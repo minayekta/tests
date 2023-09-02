@@ -65,12 +65,6 @@ $(function () {
     console.log(discover_variety_frame_step);
   });
 
-  // MANAGERS SECTION
-  gsap.to(".anime-titles", {
-    x: "",
-    y: "",
-    duration: 1,
-  });
 
   ////////////////////////////////////////////////
   // LARGER TITLES
@@ -165,23 +159,6 @@ $(function () {
     },
   });
 
-
-  // new ScrollMagic.Scene({ triggerElement: ".title-managers", offset: 100 })
-  // .setClassToggle(".title-managers", "go-top")
-  // .addTo(controller);
-  gsap.to(".video-action.center", {
-    scrollTrigger: {
-      trigger: ".title-center-moving-video",
-      scrub: true,
-      pin: true,
-      start: "center center",
-      end: "bottom -300%",
-      toggleClass: "active",
-      ease: "power2"
-    },
-    
-  });
-
   gsap.to(".title-center-moving-video", {
     scrollTrigger: {
       trigger: ".title-center-moving-video",
@@ -216,6 +193,43 @@ $(function () {
       ease: "power2"
     },
   });
+
+
+  gsap.to(".title-center-red-space", {
+    scrollTrigger: {
+      trigger: ".title-center-red-space",
+      scrub: true,
+      start: "center center",
+      ease: "power2",
+    },
+    y:"-1000%",
+  });
+
+  gsap.to(".bottom-slide-text-red-space", {
+    scrollTrigger: {
+      trigger: ".bottom-slide-text-red-space",
+      scrub: true,
+      start: "center center",
+      ease: "power2",
+    },
+    y:"-30vh",
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   ////////////////////////////////////////////// NEGOTIATE TEAMS 
