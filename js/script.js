@@ -1,9 +1,9 @@
 $(function () {
   let controller = new ScrollMagic.Controller();
   let wipeAnimation = new TimelineMax()
-    .to(".moving-words", 1, { y: "-25%",delay:2 })
-    .to(".moving-words", 1, { y: "-50%",delay:3 })
-    .to(".moving-words", 1, { y: "-75%",delay:3 });
+    .to(".moving-words", 1, { y: "-25%",delay:1 })
+    .to(".moving-words", 1, { y: "-50%",delay:1 })
+    .to(".moving-words", 1, { y: "-75%",delay:1 });
 
   new ScrollMagic.Scene({
     triggerElement: "#moving-texts",
