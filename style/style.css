@@ -264,9 +264,10 @@ section {
     opacity: 0;
 }
 
-.GlobalTour .opacity-1{
+.GlobalTour .opacity-1 {
     opacity: 1 !important;
 }
+
 .GlobalTour .connect-section {
     height: 100%;
     width: 100%;
@@ -434,12 +435,11 @@ section {
     font-weight: bold;
 }
 
-.GlobalTour .moving-form{
+.GlobalTour .moving-form {
     padding: 40px 0;
 }
-.GlobalTour .carousel .owl-carousel{
 
-}
+.GlobalTour .carousel .owl-carousel {}
 
 
 
@@ -451,3 +451,20 @@ section {
 .space-test {
     height: 200vh;
 }
+
+
+
+
+/* .text>p>div {
+    background: linear-gradient(to right,
+            rgb(255, 255, 255) 50%,
+            rgb(37, 37, 37) 50%);
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-left: 50px;
+    line-height: 1.2;
+    font-size: 6vw;
+} */

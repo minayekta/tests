@@ -345,6 +345,28 @@ $(function () {
 
   //////////////////////////////////////////////////// FUNCTION FOR RECIEVE TO ELEMENT SCROLL
 
+  const split = new SplitText("p.test-split-text", { type: "lines" });
+  split.lines.forEach((target) => {
+    gsap.to(target, {
+        backgroundPositionX: 0,
+        ease: "none",
+        scrollTrigger: {
+        trigger: target,
+        markers: false,
+        scrub: 1,
+        start: "top center",
+        end: "bottom center"
+        }
+    });
+  });
+
+
+
+
+
+
+
+
 
 });
 
